@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="js/bootstrap.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <title>Latitude</title>
+
+</head>
+
+<body>
+
+  <div class="navigation">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" style="background-color:turquoise;" href="index.html">Latitude</a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Plots
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="maxtemp.html">Max Temperature</a>
+                <a class="dropdown-item" href="humidity.html">Humidity</a>
+                <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comparison.html">Comparison</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="data.html">Data</a>
+            </li>
+  
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+  <!-- <div class="navigation">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <button onclick="window.location.href = 'index.html';">Latidude</button>
+      <div class="dropdown">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Plots
+        </a>
+      
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="C:\Users\Blob\Web-Design-Challenge\maxtemp.html">Max Temperature</a>
+          <a class="dropdown-item" href="C:\Users\Blob\web-scraping-challenge\humidity.html">Humidity</a>
+          <a class="dropdown-item" href="C:\Users\Blob\Web-Design-Challenge\cloudiness.html">Cloudiness</a>
+          <a class="dropdown-item" href="C:\Users\Blob\Web-Design-Challenge\windspeed.html">Wind Speed</a>
+        </div>
+      </div>
+    </nav>
+  </div> -->
+
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="row">
+        <div class="col-lg-6">
+ 
+          <h2>Summary: Latitude vs. X</h2>
+          <img src="WebVisualizations\assets_images\LatVsTemp.png" alt="LatVsTemp"
+          style="width: 150%";>
+          <p style="color:rgba(4, 8, 65, 0.774);font-size:150%;font-family: Arial, Helvetica, sans-serif">
+            Welcome and thank you for dropping by. The purpose of this visualization is an analysis of weather changes near the equator or middle of the earth. The data collections were from OpenWeatherMap API over more than 500 cities. The following steps of this collection will be displayed with additional visuals and processing steps.
+            <br>
+            <br>
+            In order to collect the dataset over the 500 cities, the starting process used was Matplotib on Jupyter Notebook. In using this step to plot out the relationship between Latitude and Weather. There were factors that were included during our collections: Temperature, Humidity, Cloudiness, and Wind Speed. The data and visualizations are part of this project provide an analytic approach in handling and making use of the data collected to explain our findings, whether it be the changes of the listed factors or relationship among them.</br>
+            <br>
+            </p>
+ 
+        </div>
+      </div>
+    </div>
+    
+      <div class="col-lg-6">
+        <h2>Visualizations</h2>
+        <section id="figure">
+          <div class="row">
+            <img id="bio-image" src="WebVisualizations\assets_images\LatVsCloudiness.png" class="col-sm-12 col-md-6"
+              style="width: 50%" ;>
+            <img id="bio-image" src="WebVisualizations\assets_images\LatVsHumidity.png" class="col-sm-12 col-md-6"
+              style="width: 50%" ;>
+          </div>
+          <div class="row">
+            <img id="bio-image" src="WebVisualizations\assets_images\LatVsTemp.png" class="col-sm-12 col-md-6"
+              style="width: 50%" ;>
+            <img id="bio-image" src="WebVisualizations\assets_images\LatVsWindSpeed.png" class="col-sm-12 col-md-6"
+              style="width: 50%" ;>
+          </div>
+        </section>
+      </div>
+  </div>
+
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>   
+</body>
+<footer>
+  <div class="footer"> &copy; Copyright KU Coding Bootcamp 2020</div>
+</footer>
+</html>

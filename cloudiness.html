@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="js/bootstrap.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <title>Latitude</title>
+
+</head>
+
+<body>
+
+  <div class="navigation">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" style="background-color:turquoise;" href="index.html">Latitude</a>
+        <button class="navbar-toggler  border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Plots
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="maxtemp.html">Max Temperature</a>
+                <a class="dropdown-item" href="humidity.html">Humidity</a>
+                <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comparison.html">Comparison</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="data.html">Data</a>
+            </li>
+  
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="row">
+          <div class="col-sm-6">
+            <h2>Summary: Cloudiness</h2>
+            <img data-aria-label-part="" src="WebVisualizations\assets_images\LatVsCloudiness.png" alt="LatVsCloudiness"
+            style="width: 150%";>
+            <p style="color:rgba(4, 8, 65, 0.774);font-size:150%;font-family: Arial, Helvetica, sans-serif">
+              In this plot, there are more points scattered upon the South or lower part of the hemisphere since being closer to the equator has a warmer and increasing of clouds. Making it more common for nicer and more vacation-like weather than other parts of the world.
+              <br>
+          </div>
+        </div>
+      </div>
+      
+        <div class="col-lg-6">
+          <h2>Visualizations</h2>
+          <section id="figure">
+            <div class="row">
+              <img id="bio-image" src="WebVisualizations\assets_images\LatVsCloudiness.png" class="col-sm-12 col-md-6"
+                style="width: 50%" ;>
+              <img id="bio-image" src="WebVisualizations\assets_images\LatVsHumidity.png" class="col-sm-12 col-md-6"
+                style="width: 50%" ;>
+            </div>
+            <div class="row">
+              <img id="bio-image" src="WebVisualizations\assets_images\LatVsTemp.png" class="col-sm-12 col-md-6"
+                style="width: 50%" ;>
+              <img id="bio-image" src="WebVisualizations\assets_images\LatVsWindSpeed.png" class="col-sm-12 col-md-6"
+                style="width: 50%" ;>
+            </div>
+          </section>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+</body>
+<footer>
+  <div class="footer"> &copy; Copyright KU Coding Bootcamp 2020</div>
+</footer>
+</html>
